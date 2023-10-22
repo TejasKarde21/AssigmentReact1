@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: sans-serif;">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    
+    <div id="root"></div>
+
+  
+
+   <!-- <script src="ReactApp.js"></script> -->
+
+   <script>
+
+const rootElement = document.querySelector("#root");
+
+const h1 = React.createElement("h1", {}, "Topics Covered");
+const p1 = React.createElement("p", {}, "The following is a list of all the topics we cover in the MDN learning area.");
+const a1 = React.createElement("a",{href :"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" },"Getting started with the web");
+
+const p2 = React.createElement("p",{},"Provides a practical introduction to web development for complete beginners.")
+
+const a2 = React.createElement("a",{href :"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" },"HTML-Structuring the web");
+
+const p3 = React.createElement("p",{},"HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.")
+
+const a3 = React.createElement("a",{href :"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" },"CSS-Styling the web");
+
+const p4 = React.createElement("p",{},"CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS.")
+
+
+
+const app = React.createElement("div", null, h1, p1,a1, p2,a2, p3,a3,p4);
+
+ReactDOM.render(app, rootElement);
+
+    
+   </script>
+</body>
+ 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

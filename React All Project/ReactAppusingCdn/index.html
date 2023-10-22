@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: sans-serif;;">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    
+    <div id="root"></div>
+
+  
+
+   <!-- <script src="ReactApp.js"></script> -->
+
+   <script>
+
+const rootElement = document.querySelector("#root");
+
+const h1 = React.createElement("h1", {}, "Learn Web Development");
+const p1 = React.createElement("p", {}, "Welcome to MDN learn area.This set of article aims to guide complete beginner to web development with all that they need to start coding websites.");
+const p2 = React.createElement(
+  "p",
+  {},
+  `The aim of the area of MDN is not to take you from "beginners" to "experts" but to take you from "beginner" to "confertable".From there,you should be able to start making your way, learning from `,
+  React.createElement(
+    "span",
+    {},
+    React.createElement(
+      "a",
+      { href: "https://developer.mozilla.org/en-US/" },
+      "the rest of MDN,"
+    )
+  ),
+  `and other intermedite to advanced resourses that assume a lot of previous knowledge.`
+);
+const p3 = React.createElement("p", {}, "If you are a complete beginner, web development can be challenging - we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work.");
+
+const app = React.createElement("div", null, h1, p1, p2, p3);
+
+ReactDOM.render(app, rootElement);
+
+    
+   </script>
+</body>
+ 
+</html>
